@@ -1,0 +1,17 @@
+{
+  "name": "nonperclock",
+  "version": "1.0.0",
+  "description": "A proposal for a personal non-linear clock system",
+  "main": "src/nonperclock.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olaf T.A. Janssen",
+  "license": "ISC",
+  "dependencies": {
+    "suncalc": "^1.8.0"
+  }
+}
