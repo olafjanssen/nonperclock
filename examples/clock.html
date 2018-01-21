@@ -5,6 +5,76 @@
     <title>Showing the current time in non-per-clock time.</title>
     <script src="../node_modules/suncalc/suncalc.js"></script>
     <script src="../src/nonperclock.js"></script>
+
+    <style>
+        /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+        @font-face {
+            font-family: "Symbola";
+            src: url("../fonts/Symbola.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #time {
+            margin: 2em auto;
+            font-size: 3em;
+            width: 16em;
+        }
+
+        .nonperclock {
+            text-shadow: white 0.1em 0.1em 0.2em;
+            box-shadow: #aaa 0 0 0.2em;
+            border-radius: 0.5em;
+            font-family: Symbola;
+            background: #eee;
+            padding: 1.5em;
+            margin: 1em;
+        }
+
+        .npc-major, .npc-minor, .npc-patch {
+            vertical-align: middle;
+            font-size: 3em;
+        }
+
+        .npc-major-sep,
+        .npc-minor-sep {
+            vertical-align: middle;
+            font-size: 2em;
+            margin: 0 0.25em;
+        }
+
+        .npc-major-sep:after,
+        .npc-minor-sep:after {
+            content: ':';
+        }
+
+        .npc-patch-sep {
+            margin: 0 0.5em;
+        }
+
+        .npc-remainder {
+            vertical-align: middle;
+            font-size: 1.5em;
+            opacity: 0.5;
+        }
+
+        .npc-sign {
+            font-size: 1.5em;
+            vertical-align: middle;
+            margin-right: 0.25em;
+        }
+
+        .npc-sign:after{
+            content: '+';
+        }
+
+        .npc-sign[data-npc-sign="-1"]:after {
+            content: '-';
+        }
+
+
+
+    </style>
 </head>
 <body>
 <h1 id="time"></h1>
